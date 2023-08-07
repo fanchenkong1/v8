@@ -1205,6 +1205,9 @@ DEFINE_BOOL(turbo_optimize_math_minmax, true,
 DEFINE_BOOL(turbo_collect_feedback_in_generic_lowering, false,
             "enable experimental feedback collection in generic lowering.")
 
+DEFINE_BOOL(turbo_match_pmulh, false, "enable pattern matching of pmulhw and pmulhuw.")
+DEFINE_BOOL(trace_turbo_match_pmulh, false, "trace pattern matching of pmulhw and pmulhuw.")
+
 DEFINE_BOOL(turboshaft, false, "enable TurboFan's Turboshaft phases for JS")
 DEFINE_WEAK_IMPLICATION(future, turboshaft)
 
